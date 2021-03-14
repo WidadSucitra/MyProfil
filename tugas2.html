@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="header">
+        <div class="navbar container">
+            <h1 class="brand">AWSucitra</h1>
+            <div class="menu">
+                <h1><a href="index.html">Tugas1</a></h1>
+                <h1><a href="tugas2.html">Tugas2</a></h1>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="greeting">
+                <span class="huruf_h">H</span>
+                <p class="huruf_i">i. <br> ello. </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="top container hitung">
+        <form action="">
+            <input type="text" id="Nilai1" placeholder="Nilai Pertama">
+            <input type="text" id="Nilai2" placeholder="Nilai Kedua">
+            <input type="text" id="Nilai3" placeholder="Nilai Ketiga">
+        </form>
+        <div class="tombol">
+            <button onclick="count()">Hitung</button>
+            <button onclick="HapusData()">Hapus</button>
+        </div>
+        <ul class="hasil">
+            <li>Nilai Tertinggi: <span class="max"></span> </li>
+            <li>Nilai Terendah: <span class="min"></span> </li>
+            <li>Nilai Tengah: <span class="median"></span> </li>
+            <li>Nilai Rata-rata: <span class="mean"></span></li>
+        </ul>
+    </section>
+</body>
+
+</html>
