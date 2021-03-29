@@ -206,13 +206,6 @@ body {
     padding: 0 7%;
 }
 
-section.top {
-    background-color: rgb(252, 209, 241);
-    border-bottom-right-radius: 60%;
-    border-top: 20px ridge rgba(255, 158, 215, 0.6);
-    border-bottom: 50px ridge #c5eeff;
-}
-
 section.top,
 section.tengah,
 section.bottom {
@@ -539,72 +532,57 @@ h2,
     }
 }
 
-
-}
 @media screen and (min-width: 1000px) {
     .jumbotron {
         height: 350px;
     }
-    
     .jumbotron .greeting .huruf_h {
         font-size: 150px;
     }
-    
     .jumbotron .greeting .huruf_i {
         font-size: 55px;
     }
-    
     section.top {
         border-top-left-radius: 30%;
         border-top: 50px ridge rgba(255, 158, 215, 0.6);
         border-bottom: 50px ridge #c5eeff;
     }
-    
     .card_name {
         width: 530px;
         height: 250px;
         padding: 20px;
     }
-    
     .card_name img {
         height: 80%;
         margin: 0 30px;
     }
-    
     .card_name table,
     .pendidikan img,
     .pendidikan .pend {
         display: inline-block;
     }
-    
     h2,
     .card_name td,
     .about p {
         line-height: 30px;
     }
-    
     .card_name td {
         font-size: 15px;
     }
-    
     .card_name td a {
         text-decoration: none;
         cursor: pointer;
     }
-    
     .about {
         padding: 50px 0;
         padding-right: 150px;
     }
-    
     .about p {
         font-size: 15px;
     }
-    
     .pendidikan {
         text-align: center;
     }
-    
     .pendidikan .pend {
         width: fit-content;
         margin-top: 30px;
@@ -612,117 +590,95 @@ h2,
         margin-bottom: 100px;
         text-align: left;
     }
-    
     .pendidikan img {
         width: 35%;
         padding-bottom: 10px;
     }
-    
     .pendidikan p {
         padding: 10px;
     }
-    
     .pelatihan table {
         width: fit-content;
     }
-    
     .pelatihan td {
         padding: 10px 15px;
     }
-    
     .skill table td {
         display: inline-block;
         width: 33%;
     }
-    
     .skill table div {
         margin: 5px 50px 0 0;
     }
-    
     .sosmed img,
     .hobby img {
         height: 100px;
     }
-    
     .sosmed table td,
     .hobby table td {
         text-align: center;
     }
-    
     .hobby table td p {
         font-size: 15px;
         padding-top: 5px
     }
 }
+
 @media screen and (min-width: 1300px) {
     .jumbotron {
         height: 350px;
     }
-    
     .jumbotron .greeting .huruf_h {
         font-size: 150px;
     }
-    
     .jumbotron .greeting .huruf_i {
         font-size: 55px;
     }
-    
     section.top {
         border-top-left-radius: 30%;
         border-top: 50px ridge rgba(255, 158, 215, 0.6);
         border-bottom: 50px ridge #c5eeff;
     }
-    
     .card_name {
         width: 530px;
         height: 250px;
         padding: 20px;
     }
-    
     .card_name img {
         height: 80%;
         margin: 0 30px;
     }
-    
     .card_name table,
     .pendidikan img,
     .pendidikan .pend {
         display: inline-block;
     }
-    
     h2 {
         width: 100%;
         font-size: 30px;
     }
-    
     h2,
     .card_name td,
     .about p {
         line-height: 30px;
     }
-    
     .card_name td {
         font-size: 15px;
     }
-    
     .card_name td a {
         text-decoration: none;
         cursor: pointer;
     }
-    
     .about {
         padding: 50px 0;
         padding-right: 150px;
     }
-    
     .about p {
         font-size: 15px;
     }
-    
     .pendidikan {
         text-align: center;
     }
-    
     .pendidikan .pend {
         width: fit-content;
         margin-top: 30px;
@@ -730,50 +686,40 @@ h2,
         margin-bottom: 100px;
         text-align: left;
     }
-    
     .pendidikan .pend td {
         font-size: 30px;
     }
-    
     .pendidikan img {
         width: 30%;
         padding-bottom: 10px;
     }
-    
     .pendidikan p {
         padding: 10px;
         font-size: 15px;
     }
-    
     .pelatihan table {
         width: fit-content;
     }
-    
     .pelatihan td {
         padding: 10px 15px;
         font-size: 15px
     }
-    
     .skill table td {
         display: inline-block;
         width: 33%;
         font-size: 15px;
     }
-    
     .skill table div {
         margin: 5px 50px 0 0;
     }
-    
     .sosmed img,
     .hobby img {
         height: 100px;
     }
-    
     .sosmed table td,
     .hobby table td {
         text-align: center;
     }
-    
     .hobby table td p {
         font-size: 20px;
         padding-top: 13px

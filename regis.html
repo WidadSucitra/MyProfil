@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" manifest="latihan.appcache">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regis</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="regis.css">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="header">
+        <div class="navbar container">
+            <h1 class="brand">AWSucitra</h1>
+            <div class="menu">
+                <h1><a href="index.html">Tugas1</a></h1>
+                <h1><a href="tugas2.html">Tugas2</a></h1>
+                <h1><a href="regis.html">Tugas3</a></h1>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="greeting">
+                <span class="huruf_h">H</span>
+                <p class="huruf_i">i. <br> ello. </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="top container">
+        <form id='form'>
+
+            <table class="isi-data">
+                <tr>
+                    <td><label for="nama">Nama:</label><label class="Validation-error hide" id="NameValidationError"></label></td>
+                    <td><input type="text" id="nama"></td>
+                </tr>
+                <tr>
+                    <td><label for="nim">NIM:</label></td>
+                    <td><input type="text" id="nim"></td>
+                </tr>
+                <tr>
+                    <td><label for="prodi">Prodi:</label></td>
+                    <td><input type="text" id="prodi"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="text" id="email"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button id="btnTambah" type="submit">Daftar</button></td>
+                </tr>
+            </table>
+        </form>
+
+        <div class="tabel-data">
+            <table class="data">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>NIM</th>
+                        <th>Prodi</th>
+                        <th>Email</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tabel">
+                </tbody>
+            </table>
+
+        </div>
+        <div id='pesan'>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

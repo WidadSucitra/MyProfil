@@ -1,0 +1,374 @@
+/* css reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* STYLE */
+
+body {
+    background-color: #96cce2;
+}
+
+.header .navbar .brand,
+.menu h1,
+.menu,
+.h1 {
+    display: inline-block;
+}
+
+.navbar {
+    background-color: transparent;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 35px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.navbar .menu {
+    margin-left: 30px;
+}
+
+.jumbotron {
+    margin-top: -40px;
+    background-size: cover;
+    height: 250px;
+    background-image: url(img/pawel-czerwinski-Qiy4hr18aGs-unsplash\ \(1\)\ \(1\).jpg);
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+}
+
+.jumbotron .greeting {
+    margin: auto;
+    padding-top: 100px;
+    width: fit-content;
+    font-family: 'Viga', sans-serif;
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.747);
+    text-align: left;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+.jumbotron .greeting .huruf_h {
+    font-size: 100px;
+}
+
+.jumbotron .greeting .huruf_i {
+    display: inline-block;
+    font-size: 35px;
+    margin-left: -25px;
+}
+
+section.top {
+    background-color: rgb(252, 209, 241);
+    border-bottom-right-radius: 60%;
+    border-top: 20px ridge rgba(255, 158, 215, 0.6);
+    border-bottom: 50px ridge #c5eeff;
+    padding: 50px 0 200px 0;
+    font-size: 12px;
+}
+
+.container {
+    padding: 0 7%;
+}
+
+.top table {
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.top .isi-data input {
+    margin: 10px 0;
+    width: 170px;
+    height: 15px;
+    background-color: #eaf9ff;
+}
+
+.top tr td:first-child {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.top .isi-data td:last-child {
+    text-align: right;
+}
+
+.top .isi-data button {
+    font-size: 10px;
+    margin-top: 20px;
+    background-color: #96cce2;
+    border: solid 1px #24353b;
+    padding: 3px 8px;
+}
+
+.top .table-data {
+    margin-left: 60px;
+}
+
+.top thead {
+    background-color: #c5eeff;
+}
+
+.top .data thead th:last-child {
+    background-color: #fcd1f1;
+    border: none;
+    text-align: left;
+}
+
+.top table.data td,
+.top table.data th {
+    font-size: 7px;
+    border: solid black 1px;
+    width: 60px;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+}
+
+.top table.data td:last-child {
+    text-align: left;
+    border: none;
+}
+
+@media screen and (min-width: 760px) {
+    .jumbotron {
+        height: 350px;
+    }
+    .jumbotron .greeting .huruf_h {
+        font-size: 150px;
+    }
+    .jumbotron .greeting .huruf_i {
+        font-size: 55px;
+    }
+    section.top {
+        border-top-left-radius: 30%;
+        border-top: 50px ridge rgba(255, 158, 215, 0.6);
+        border-bottom: 50px ridge #c5eeff;
+        font-size: 18px;
+    }
+    .top .isi-data input {
+        width: 300px;
+        height: 25px;
+    }
+    .top .isi-data button {
+        font-size: 15px;
+        padding: 5px 15px;
+    }
+    .top .table-data {
+        margin-left: 140px;
+    }
+    .top thead td:last-child {
+        background-color: #fcd1f1;
+        /* display: none; */
+    }
+    .top table.data td,
+    .top table.data th {
+        font-size: 12px;
+        width: 140px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .jumbotron {
+        height: 350px;
+    }
+    .jumbotron .greeting .huruf_h {
+        font-size: 150px;
+    }
+    .jumbotron .greeting .huruf_i {
+        font-size: 55px;
+    }
+    section.top {
+        border-top-left-radius: 30%;
+        border-top: 50px ridge rgba(255, 158, 215, 0.6);
+        border-bottom: 50px ridge #c5eeff;
+        font-size: 20px;
+    }
+    .top .isi-data button {
+        font-size: 20px;
+    }
+    .top table.data td,
+    .top table.data th {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .jumbotron {
+        height: 350px;
+    }
+    .jumbotron .greeting .huruf_h {
+        font-size: 150px;
+    }
+    .jumbotron .greeting .huruf_i {
+        font-size: 55px;
+    }
+    section.top {
+        border-top-left-radius: 30%;
+        border-top: 50px ridge rgba(255, 158, 215, 0.6);
+        border-bottom: 50px ridge #c5eeff;
+        font-size: 25px;
+    }
+    .top .isi-data input {
+        width: 350px;
+        height: 30px;
+    }
+    .top .isi-data button {
+        font-size: 20px;
+    }
+    .top .table-data {
+        margin-left: 190px;
+    }
+    .top thead td:last-child {
+        background-color: #fcd1f1;
+        /* display: none; */
+    }
+    .top table.data td,
+    .top table.data th {
+        font-size: 20px;
+        width: 190px;
+    }
+}
