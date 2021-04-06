@@ -204,10 +204,10 @@ body {
 
 section.top {
     background-color: rgb(252, 209, 241);
-    border-bottom-right-radius: 60%;
-    border-top: 20px ridge rgba(255, 158, 215, 0.6);
+    border-top: 50px ridge rgba(255, 158, 215, 0.6);
     border-bottom: 50px ridge #c5eeff;
-    padding: 50px 0 200px 0;
+    padding-top: 50px;
+    padding-bottom: 200px;
     font-size: 12px;
 }
 
@@ -273,6 +273,86 @@ section.top {
     border: none;
 }
 
+
+/* COVID STYLE */
+
+section.covid.container {
+    padding-bottom: 150px;
+}
+
+.top .group,
+.top .global,
+.top .judul {
+    width: fit-content;
+    margin: auto;
+    font-family: arial;
+    text-align: center;
+}
+
+.top .judul {
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 90px;
+}
+
+.top .judul p {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.top .negara {
+    display: inline-block;
+    margin: 10px;
+    margin-top: 60px;
+    border-radius: 5px;
+    padding: 20px 0 10px;
+}
+
+.top .count {
+    width: fit-content;
+}
+
+.top .count div {
+    border-radius: 5px;
+    /*     padding: 10px; */
+    box-sizing: border-box;
+    width: 70px;
+    background-color: #d8d8d8;
+    display: inline-block;
+    height: 50px;
+    font-size: 9px;
+    text-align: center;
+    box-shadow: 0 0 4px #827c7c;
+    /*     border: 1px solid black; */
+    margin: 5px;
+}
+
+.top div.count h3 {
+    background-color: #efabdb;
+    padding: 5px;
+}
+
+.top .count h2 {
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.top .count p {
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgb(15, 65, 112);
+}
+
+@media screen and (min-width: 460px) {
+    .top .count div {
+        width: 100px;
+        margin: 10px;
+    }
+}
+
 @media screen and (min-width: 760px) {
     .jumbotron {
         height: 350px;
@@ -285,6 +365,7 @@ section.top {
     }
     section.top {
         border-top-left-radius: 30%;
+        border-bottom-right-radius: 30%;
         border-top: 50px ridge rgba(255, 158, 215, 0.6);
         border-bottom: 50px ridge #c5eeff;
         font-size: 18px;
@@ -309,6 +390,35 @@ section.top {
         font-size: 12px;
         width: 140px;
     }
+    /* COVID STYLE */
+    .top .judul {
+        font-size: 50px;
+        margin-top: 50px;
+    }
+    .top .judul p {
+        font-size: 37px;
+        margin-top: 14px;
+    }
+    .top .negara {
+        display: block;
+    }
+    .top .count {
+        padding: 10px;
+    }
+    .top .count div {
+        width: 170px;
+        height: 90px;
+        font-size: 16px;
+    }
+    .top .count h2 {
+        font-size: 25px;
+    }
+    .top .count p {
+        font-size: 25px;
+        margin-top: 20px;
+        font-weight: bold;
+        color: rgb(15, 65, 112);
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -322,7 +432,8 @@ section.top {
         font-size: 55px;
     }
     section.top {
-        border-top-left-radius: 30%;
+        border-top-left-radius: 40%;
+        border-bottom-right-radius: 60%;
         border-top: 50px ridge rgba(255, 158, 215, 0.6);
         border-bottom: 50px ridge #c5eeff;
         font-size: 20px;
@@ -333,6 +444,34 @@ section.top {
     .top table.data td,
     .top table.data th {
         font-size: 15px;
+    }
+    /* COVID STYLE */
+    section.covid.container {
+        padding-bottom: 350px;
+    }
+    .top .judul {
+        font-size: 55px;
+        margin-top: 50px;
+    }
+    .top .judul p {
+        font-size: 37px;
+        margin-top: 20px;
+    }
+    .top .negara {
+        display: inline-block;
+        padding: 20px 10px 10px;
+    }
+    .top .count div {
+        width: 120px;
+    }
+    .top .count h2 {
+        font-size: 30px;
+    }
+    .top .count p {
+        font-size: 20px;
+        margin-top: 20px;
+        font-weight: bold;
+        color: rgb(15, 65, 112);
     }
 }
 
@@ -370,5 +509,26 @@ section.top {
     .top table.data th {
         font-size: 20px;
         width: 190px;
+    }
+    /* COVID STYLE */
+    section.covid.container {
+        padding-bottom: 350px;
+    }
+    .top .judul {
+        font-size: 70px;
+        margin-top: 50px;
+    }
+    .top .judul p {
+        font-size: 47px;
+    }
+    .top .negara {
+        display: inline-block;
+        padding: 20px 10px 10px;
+    }
+    .top .count div {
+        width: 150px;
+    }
+    .top .count h2 {
+        font-size: 30px;
     }
 }

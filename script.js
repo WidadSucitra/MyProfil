@@ -40,6 +40,10 @@ function HapusData() {
     document.getElementsByClassName('median')[0].innerHTML = "";
     document.getElementsByClassName('mean')[0].innerHTML = "";
 }
+
+// HALAMAN REGIS
+
+
 var tabel = document.getElementById('tabel'),
     nim = document.getElementById('nim'),
     nama = document.getElementById('nama'),
