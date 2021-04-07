@@ -7,6 +7,8 @@ $(document).ready(function() {
     dataMalay()
     dataThai()
     dataSingapura()
+    dataLaos()
+    dataVietnam()
 
 
     function semuaData() {
@@ -105,6 +107,46 @@ $(document).ready(function() {
                     $('#positif-sg').html(positif.value);
                     $('#sembuh-sg').html(sembuh.value);
                     $('#meninggal-sg').html(meninggal.value);
+                } catch {
+                    alert('Error');
+                }
+            }
+        })
+    }
+
+    function dataLaos() {
+        $.ajax({
+            url: 'https://covid19.mathdro.id/api/countries/LAO',
+            success: function(data) {
+                try {
+                    var json = data;
+                    var positif = data.confirmed;
+                    var sembuh = data.recovered;
+                    var meninggal = data.deaths;
+
+                    $('#positif-laos').html(positif.value);
+                    $('#sembuh-laos').html(sembuh.value);
+                    $('#meninggal-laos').html(meninggal.value);
+                } catch {
+                    alert('Error');
+                }
+            }
+        })
+    }
+
+    function dataVietnam() {
+        $.ajax({
+            url: 'https://covid19.mathdro.id/api/countries/VNM',
+            success: function(data) {
+                try {
+                    var json = data;
+                    var positif = data.confirmed;
+                    var sembuh = data.recovered;
+                    var meninggal = data.deaths;
+
+                    $('#positif-vt').html(positif.value);
+                    $('#sembuh-vt').html(sembuh.value);
+                    $('#meninggal-vt').html(meninggal.value);
                 } catch {
                     alert('Error');
                 }
